@@ -1,0 +1,389 @@
+/* Regional Theme Variables */
+:root {
+  /* Default/Global Variables */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96%;
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  --radius: 0.5rem;
+}
+
+/* Australia Theme - Ocean Blues, Eucalyptus Greens, Sunset Oranges */
+[data-theme="australia"] {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 201 85% 53%; /* Ocean Blue #2E86AB */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 162 35% 47%; /* Eucalyptus Green #4A7B72 */
+  --secondary-foreground: 222.2 84% 4.9%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 33 94% 49%; /* Sunset Orange #F18F01 */
+  --accent-foreground: 210 40% 98%;
+  --destructive: 8 76% 45%; /* Terracotta Red #C73E1D */
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 201 85% 53%;
+}
+
+/* USA Theme - Corporate Blues, Action Reds, Achievement Greens */
+[data-theme="usa"] {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 218 69% 34%; /* Corporate Blue #1B3A8A */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 356 75% 51%; /* Action Red #DC2526 */
+  --secondary-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 158 100% 16%; /* Achievement Green #053669 */
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 218 69% 34%;
+}
+
+/* Europe Theme - European Blues, Sophisticated Grays, Sustainable Greens */
+[data-theme="europe"] {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 224 76% 48%; /* European Blue #1E40AF */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 158 64% 37%; /* Sustainable Green #10B881 */
+  --secondary-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 44 95% 51%; /* Careful Amber #F5BE0B */
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 224 76% 48%;
+}
+
+/* New Zealand Theme - Natural Greens, Sky Blues, Earth Tones */
+[data-theme="newzealand"] {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 158 64% 37%; /* Forest Green #10B881 */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 201 85% 53%; /* Sky Blue #2E86AB */
+  --secondary-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 25 85% 55%; /* Earth Orange #E67E22 */
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 158 64% 37%;
+}
+
+/* Japan Theme - Traditional Reds, Zen Grays, Cherry Blossom Pinks */
+[data-theme="japan"] {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 0 65% 51%; /* Traditional Red #DC143C */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 0 0% 45%; /* Zen Gray #737373 */
+  --secondary-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 350 100% 88%; /* Cherry Blossom Pink #FFB7C5 */
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 0 65% 51%;
+}
+
+/* Singapore Theme - Modern Blues, Prosperity Greens, Gold Accents */
+[data-theme="singapore"] {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 210 100% 50%; /* Modern Blue #0080FF */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 120 61% 34%; /* Prosperity Green #228B22 */
+  --secondary-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 51 100% 50%; /* Gold #FFD700 */
+  --accent-foreground: 222.2 84% 4.9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 210 100% 50%;
+}
+
+/* South Korea Theme - Technology Blues, Dynamic Purples, Innovation Greens */
+[data-theme="southkorea"] {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 240 100% 50%; /* Technology Blue #0000FF */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 270 100% 50%; /* Dynamic Purple #8000FF */
+  --secondary-foreground: 210 40% 98%;
+  --muted: 210 40% 96%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 120 100% 25%; /* Innovation Green #008000 */
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 240 100% 50%;
+}
+
+/* Dark mode variants for all themes */
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 84% 4.9%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 48%;
+}
+
+/* Base styles */
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+/* Utility classes for consistent styling */
+.bg-primary {
+  background-color: hsl(var(--primary));
+}
+
+.text-primary {
+  color: hsl(var(--primary));
+}
+
+.bg-secondary {
+  background-color: hsl(var(--secondary));
+}
+
+.text-secondary {
+  color: hsl(var(--secondary));
+}
+
+.bg-accent {
+  background-color: hsl(var(--accent));
+}
+
+.text-accent {
+  color: hsl(var(--accent));
+}
+
+.border-primary {
+  border-color: hsl(var(--primary));
+}
+
+.shadow-primary {
+  box-shadow: 0 4px 6px -1px hsl(var(--primary) / 0.1), 0 2px 4px -1px hsl(var(--primary) / 0.06);
+}
+
+.shadow-lg-primary {
+  box-shadow: 0 10px 15px -3px hsl(var(--primary) / 0.1), 0 4px 6px -2px hsl(var(--primary) / 0.05);
+}
+
+/* Hero gradient background */
+.hero-gradient {
+  background: linear-gradient(135deg, 
+    hsl(var(--primary) / 0.1) 0%, 
+    hsl(var(--secondary) / 0.05) 50%, 
+    hsl(var(--accent) / 0.1) 100%);
+}
+
+/* Regional theme transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.8);
+}
+
+/* Enhanced button hover effects */
+.btn-primary:hover {
+  background-color: hsl(var(--primary) / 0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px hsl(var(--primary) / 0.3);
+}
+
+/* Card hover effects */
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px hsl(var(--primary) / 0.15);
+}
+
+/* Regional theme indicators */
+[data-theme="australia"] .theme-indicator::before {
+  content: "🇦🇺";
+}
+
+[data-theme="usa"] .theme-indicator::before {
+  content: "🇺🇸";
+}
+
+[data-theme="europe"] .theme-indicator::before {
+  content: "🇪🇺";
+}
+
+[data-theme="newzealand"] .theme-indicator::before {
+  content: "🇳🇿";
+}
+
+[data-theme="japan"] .theme-indicator::before {
+  content: "🇯🇵";
+}
+
+[data-theme="singapore"] .theme-indicator::before {
+  content: "🇸🇬";
+}
+
+[data-theme="southkorea"] .theme-indicator::before {
+  content: "🇰🇷";
+}
+
+/* Responsive design enhancements */
+@media (max-width: 768px) {
+  .hero-gradient {
+    padding: 3rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Focus states for accessibility */
+button:focus,
+input:focus,
+select:focus {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

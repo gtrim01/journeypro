@@ -1,156 +1,109 @@
-# JourneyPro Development Workspace
+# JourneyPro - Complete Travel Intelligence Platform
 
-## 🚀 VS Code Development Environment
+## Project Overview
 
-This workspace is configured for JourneyPro full-stack development with all essential tools and extensions.
+JourneyPro is a comprehensive travel intelligence platform that provides intelligent route planning, weather integration, cultural adaptation, and safety features for travelers worldwide. This project includes a React frontend, Flask backend, mobile applications, and comprehensive documentation.
 
-### ✅ Installed Extensions
-
-#### **Core Development:**
-- **Python** (ms-python.python) - Python language support with IntelliSense
-- **Pylance** (ms-python.vscode-pylance) - Fast Python language server
-- **Python Debugger** (ms-python.debugpy) - Python debugging support
-
-#### **JavaScript/Frontend:**
-- **JavaScript ES6 Snippets** (xabikos.javascriptsnippets) - ES6 code snippets
-- **TypeScript** (ms-vscode.vscode-typescript-next) - TypeScript support
-- **Auto Rename Tag** (formulahendry.auto-rename-tag) - Auto rename HTML/XML tags
-
-#### **Code Quality & Formatting:**
-- **Prettier** (esbenp.prettier-vscode) - Code formatter
-- **ESLint** (dbaeumer.vscode-eslint) - JavaScript linting
-- **Tailwind CSS** (bradlc.vscode-tailwindcss) - Tailwind CSS support
-
-#### **Development Tools:**
-- **GitLens** (eamodio.gitlens) - Git visualization and history
-- **Thunder Client** (rangav.vscode-thunder-client) - API testing tool
-- **Live Server** (ritwickdey.liveserver) - Local development server
-
-### 📁 Workspace Structure
+## Project Structure
 
 ```
-journeypro-workspace/
-├── src/
-│   ├── backend/          # Python Flask/FastAPI backend
-│   ├── frontend/         # React/HTML frontend
-│   └── shared/           # Shared utilities and types
-├── data/                 # Vehicle database and data files
-├── tests/                # Test files
-├── docs/                 # Documentation
-├── thunder-tests/        # Thunder Client API tests
-└── journeypro.code-workspace  # VS Code workspace configuration
+journeypro-complete/
+├── frontend/           # React web application
+├── backend/            # Flask API server
+├── mobile-app/         # React Native mobile applications
+├── docs/              # Documentation and guides
+├── assets/            # Shared images, icons, and design resources
+├── config/            # Configuration files and environment settings
+├── README.md          # This file
+└── package.json       # Project metadata and scripts
 ```
 
-### 🐍 Python Environment
+## Quick Start Guide
 
-The workspace is configured to use the `journeypro-env` virtual environment:
-- **Location:** `../journeypro-env/`
-- **Python:** 3.11.0rc1
-- **Packages:** Flask, FastAPI, Pandas, NumPy, Requests, and more
+### Prerequisites
 
-### ⚙️ VS Code Configuration
+- Node.js (version 18 or higher)
+- Python (version 3.9 or higher)
+- Git for version control
+- Visual Studio Code (recommended)
 
-#### **Settings Highlights:**
-- Auto-save enabled
-- Format on save with Prettier
-- Python interpreter set to virtual environment
-- ESLint auto-fix on save
-- Git integration with GitLens
-- Thunder Client workspace integration
+### Installation
 
-#### **Keyboard Shortcuts:**
-- `Ctrl+Shift+T` - New Thunder Client request
-- `Ctrl+Shift+L` - Start Live Server
-- `Ctrl+Shift+K` - Stop Live Server
-- `Ctrl+`` - Toggle terminal
-- `Ctrl+Shift+`` - New terminal
+1. **Clone or download this project**
+   ```bash
+   # If using Git
+   git clone <repository-url>
+   cd journeypro-complete
+   ```
 
-### 🚀 Getting Started
+2. **Set up the frontend**
+   ```bash
+   cd frontend
+   pnpm install
+   pnpm run dev --host
+   ```
 
-#### **1. Open Workspace:**
-```bash
-code journeypro.code-workspace
-```
+3. **Set up the backend**
+   ```bash
+   cd backend
+   source venv/bin/activate
+   pip install -r requirements.txt
+   python src/main.py
+   ```
 
-#### **2. Activate Python Environment:**
-```bash
-source ../journeypro-env/bin/activate
-```
+### Development Workflow
 
-#### **3. Test Environment:**
-```bash
-python src/backend/test_environment.py
-```
+1. **Frontend Development**
+   - Navigate to `frontend/` directory
+   - Run `pnpm run dev --host` to start development server
+   - Edit files in `src/` directory
+   - Changes will automatically reload in browser
 
-#### **4. Start Live Server:**
-- Open `src/frontend/index.html`
-- Right-click → "Open with Live Server"
-- Or use `Ctrl+Shift+L`
+2. **Backend Development**
+   - Navigate to `backend/` directory
+   - Activate virtual environment: `source venv/bin/activate`
+   - Run `python src/main.py` to start API server
+   - Edit files in `src/` directory
+   - Restart server to see changes
 
-### 🔧 Available Tasks
+3. **Testing**
+   - Frontend: Access `http://localhost:5173`
+   - Backend API: Access `http://localhost:5000`
 
-The workspace includes pre-configured tasks:
+## Key Features
 
-1. **Activate Virtual Environment**
-2. **Install Python Dependencies**
-3. **Start Flask Development Server**
-4. **Install Node Dependencies**
-5. **Start React Development Server**
+### Travel Intelligence
+- Intelligent route planning with weather integration
+- Cultural adaptation for different regions
+- Safety monitoring and alerts
+- Vehicle-specific planning (cars, motorcycles, RVs, etc.)
 
-Access via: `Ctrl+Shift+P` → "Tasks: Run Task"
+### Regional Theming
+- Automatic adaptation to cultural preferences
+- Region-specific color schemes and layouts
+- Localized content and messaging
 
-### 🐛 Debugging Configuration
+### Mobile Applications
+- iOS and Android native applications
+- Offline functionality for travel scenarios
+- Real-time synchronization with web platform
 
-#### **Python Debugging:**
-- **Flask App:** Debug Flask applications
-- **Current File:** Debug any Python file
+## Documentation
 
-Access via: `F5` or Debug panel (`Ctrl+Shift+D`)
+Complete documentation is available in the `docs/` directory:
+- Technical Implementation Guide
+- API Documentation
+- Deployment Instructions
+- User Guides
 
-### 🌐 API Testing with Thunder Client
+## Support
 
-1. Open Thunder Client: `Ctrl+Shift+T`
-2. Create new requests for JourneyPro APIs
-3. Tests are saved in `thunder-tests/` folder
-4. Workspace-relative paths for team sharing
+For technical support and questions:
+- Review documentation in `docs/` directory
+- Check the Technical Implementation Guide
+- Contact development team
 
-### 📝 Code Quality
+## License
 
-#### **Automatic Formatting:**
-- **Python:** Black formatter (88 character line length)
-- **JavaScript/TypeScript:** Prettier with single quotes
-- **Auto-fix:** ESLint errors on save
-
-#### **Linting:**
-- **Python:** Pylint enabled
-- **JavaScript:** ESLint with recommended rules
-
-### 🎯 JourneyPro Development Features
-
-This environment is optimized for:
-- **Backend APIs:** Flask/FastAPI development
-- **Frontend:** React/HTML/CSS development
-- **Data Processing:** Pandas/NumPy for vehicle data
-- **API Integration:** Requests for external APIs
-- **Testing:** Thunder Client for API testing
-- **Version Control:** GitLens for Git visualization
-
-### 🔄 Next Steps
-
-1. **Set up Git repository** (Task 2.1.2)
-2. **Configure local development environment** (Task 2.1.3)
-3. **Set up testing and debugging tools** (Task 2.1.4)
-4. **Validate development environment** (Task 2.1.5)
-
-### 💡 Tips
-
-- Use `Ctrl+Shift+P` for command palette
-- Install additional extensions as needed
-- Configure workspace settings in `.vscode/settings.json`
-- Use Thunder Client for all API testing
-- Keep virtual environment activated while developing
-
----
-
-**🎉 Your JourneyPro development environment is ready!**
+Copyright 2025 JourneyPro. All rights reserved.
 

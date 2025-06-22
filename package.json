@@ -1,0 +1,41 @@
+{
+  "name": "journeypro-complete",
+  "version": "1.0.0",
+  "description": "Complete travel intelligence platform with React frontend, Flask backend, and mobile applications",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd frontend && pnpm run dev --host\" \"cd backend && source venv/bin/activate && python src/main.py\"",
+    "build": "cd frontend && pnpm run build",
+    "start": "cd backend && source venv/bin/activate && python src/main.py",
+    "install-all": "cd frontend && pnpm install && cd ../backend && source venv/bin/activate && pip install -r requirements.txt",
+    "test": "cd frontend && pnpm run test"
+  },
+  "keywords": [
+    "travel",
+    "intelligence",
+    "route-planning",
+    "weather",
+    "cultural-adaptation",
+    "react",
+    "flask",
+    "mobile"
+  ],
+  "author": "JourneyPro Team",
+  "license": "Proprietary",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeypro/journeypro-complete.git"
+  },
+  "bugs": {
+    "url": "https://github.com/journeypro/journeypro-complete/issues"
+  },
+  "homepage": "https://journeypro.com"
+}
+
