@@ -1,0 +1,131 @@
+{
+  "folders": [
+    {
+      "name": "JourneyPro",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "../journeypro-env/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true,
+      "**/__pycache__": true,
+      "**/*.pyc": true,
+      "**/venv": true,
+      "**/journeypro-env": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/journeypro-env": true,
+      "**/__pycache__": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-python.vscode-pylance",
+      "xabikos.javascriptsnippets",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "rangav.vscode-thunder-client",
+      "ritwickdey.liveserver",
+      "bradlc.vscode-tailwindcss",
+      "formulahendry.auto-rename-tag"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Activate Virtual Environment",
+        "type": "shell",
+        "command": "source ../journeypro-env/bin/activate",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Install Python Dependencies",
+        "type": "shell",
+        "command": "source ../journeypro-env/bin/activate && pip install -r requirements.txt",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Start Flask Development Server",
+        "type": "shell",
+        "command": "source ../journeypro-env/bin/activate && cd src/backend && python app.py",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Install Node Dependencies",
+        "type": "shell",
+        "command": "cd src/frontend && npm install",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      },
+      {
+        "label": "Start React Development Server",
+        "type": "shell",
+        "command": "cd src/frontend && npm start",
+        "group": "build",
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared"
+        }
+      }
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python: Flask App",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/src/backend/app.py",
+        "console": "integratedTerminal",
+        "env": {
+          "FLASK_ENV": "development",
+          "FLASK_DEBUG": "1"
+        },
+        "python": "${workspaceFolder}/../journeypro-env/bin/python"
+      },
+      {
+        "name": "Python: Current File",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal",
+        "python": "${workspaceFolder}/../journeypro-env/bin/python"
+      }
+    ]
+  }
+}
+

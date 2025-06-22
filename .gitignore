@@ -1,0 +1,521 @@
+# JourneyPro .gitignore
+# Comprehensive exclusion file for collaborative development
+
+# ===================================
+# PYTHON ENVIRONMENT & DEPENDENCIES
+# ===================================
+
+# Virtual environments
+venv/
+env/
+ENV/
+journeypro-env/
+.venv/
+.env/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ===================================
+# NODE.JS & JAVASCRIPT
+# ===================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+# Rollup.js default build output
+dist/
+
+# Uncomment the public line in if the project is a library
+# public
+
+# vuepress build output
+.vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Docusaurus cache and generated files
+.docusaurus
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ===================================
+# REACT & FRONTEND BUILD ARTIFACTS
+# ===================================
+
+# Production builds
+build/
+dist/
+out/
+
+# Static files
+static/
+
+# Bundle analyzer
+bundle-analyzer-report.html
+
+# ===================================
+# ENVIRONMENT & CONFIGURATION FILES
+# ===================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+
+# Configuration files with sensitive data
+config.json
+config.local.json
+secrets.json
+credentials.json
+.secrets
+.credentials
+
+# API keys and tokens
+api-keys.txt
+tokens.txt
+.api-keys
+.tokens
+
+# Database configuration
+database.json
+db-config.json
+.database
+
+# ===================================
+# OPERATING SYSTEM FILES
+# ===================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# IDE & EDITOR FILES
+# ===================================
+
+# Visual Studio Code
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-snippets
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/.ropeproject
+
+# Keep workspace file but ignore user-specific settings
+!.vscode/settings.json.template
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===================================
+# LOGS & TEMPORARY FILES
+# ===================================
+
+# Log files
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ===================================
+# DATABASE FILES
+# ===================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# Database dumps
+*.sql
+*.dump
+
+# ===================================
+# MEDIA & ASSETS (LARGE FILES)
+# ===================================
+
+# Large media files (uncomment if needed)
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+# *.flv
+# *.webm
+
+# Large image files (uncomment if needed)
+# *.psd
+# *.ai
+# *.eps
+
+# ===================================
+# JOURNEYPRO SPECIFIC
+# ===================================
+
+# Vehicle database cache
+vehicle-cache/
+*.vehicle-cache
+
+# API response cache
+api-cache/
+*.api-cache
+
+# User data and sessions
+user-data/
+sessions/
+*.session
+
+# Fuel price data cache
+fuel-prices/
+*.fuel-data
+
+# Route calculation cache
+route-cache/
+*.route-cache
+
+# Maps and tiles cache
+maps-cache/
+tiles-cache/
+
+# Thunder Client collections (keep structure, ignore sensitive data)
+thunder-tests/environments/
+thunder-tests/collections/sensitive/
+
+# Backup files
+*.backup
+*.bak
+backups/
+
+# Test data
+test-data/
+mock-data/
+sample-data/
+
+# Documentation builds
+docs/build/
+docs/_build/
+
+# ===================================
+# SECURITY & SENSITIVE DATA
+# ===================================
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# GPG keys
+*.gpg
+*.asc
+
+# Password files
+passwords.txt
+.passwords
+auth.json
+
+# ===================================
+# DEPLOYMENT & CI/CD
+# ===================================
+
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+
+# ===================================
+# PACKAGE MANAGERS
+# ===================================
+
+# Composer (PHP)
+vendor/
+composer.lock
+
+# Ruby
+Gemfile.lock
+.bundle/
+
+# Go
+go.sum
+
+# Rust
+Cargo.lock
+target/
+
+# ===================================
+# MONITORING & ANALYTICS
+# ===================================
+
+# Sentry
+.sentryclirc
+
+# New Relic
+newrelic.ini
+
+# ===================================
+# CUSTOM EXCLUSIONS
+# ===================================
+
+# Add project-specific exclusions here
+# Example:
+# custom-config/
+# private-notes.md
+
